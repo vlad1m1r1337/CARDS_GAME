@@ -1,0 +1,33 @@
+{
+    "name": "vite-test-ts",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "format": "prettier --write ./src",
+        "lint:ts": "eslint ./src/*.ts",
+        "lint:css": "stylelint ./src/index.css",
+        "lint": "npm run lint:css && npm run lint:ts",
+        "prepare": "cd .. && husky install"
+    },
+    "devDependencies": {
+        "@types/node": "^20.3.1",
+        "eslint": "^8.42.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-prettier": "^4.2.1",
+        "husky": "^8.0.3",
+        "prettier": "^2.8.8",
+        "stylelint": "^15.6.3",
+        "stylelint-config-standard": "^33.0.0",
+        "stylelint-prettier": "^3.0.0",
+        "typescript": "^5.0.2",
+        "vite": "^4.3.2"
+    },
+    "dependencies": {
+        "stylelint-config-prettier": "^9.0.5"
+    }
+}

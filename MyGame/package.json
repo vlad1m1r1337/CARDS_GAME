@@ -2,7 +2,7 @@
     "name": "vite-test-ts",
     "private": true,
     "version": "0.0.0",
-    "type": "module",
+    "type": "commonjs",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
@@ -11,7 +11,8 @@
         "lint:ts": "eslint ./src/*.ts",
         "lint:css": "stylelint ./src/index.css",
         "lint": "npm run lint:css && npm run lint:ts",
-        "prepare": "cd .. && husky install"
+        "prepare": "cd .. && husky install",
+        "test": "cd src/ && tsc random_card.test.ts && node random_card.test.js && rm -rf random_card.js random_card.test.js"
     },
     "devDependencies": {
         "@types/node": "^20.3.1",

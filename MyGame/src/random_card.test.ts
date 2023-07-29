@@ -1,7 +1,9 @@
 //-----------------------------------------------------------------------------------------------------
-
+//const { it } = require("@jest/globals");
+import { it } from "@jest/globals";
 import { randomCards } from "./random_card";
-{
+
+it('should outp 6', () => {
 	// Подготовка
 	const expected = 6;
 
@@ -13,8 +15,9 @@ import { randomCards } from "./random_card";
 	}
 	else
 		console.log("First test is successful");
-}
-{
+})
+
+it('should outp 9', () => {
 	// Подготовка
 	const expected = 12;
 
@@ -25,36 +28,19 @@ import { randomCards } from "./random_card";
 		console.log(`Expected ${expected}, but got ${is}`);
 	}
 	else
-		console.log("Second test is successful");
-}
-{
+		console.log("First test is successful");
+})
+
+it('should outp 9', () => {
 	// Подготовка
-	const expected = 36;
+	const expected = 18;
 
 	// Действие
-	const is = randomCards(18).length;
+	const is = randomCards(9).length;
 
 	if (expected !== is){
 		console.log(`Expected ${expected}, but got ${is}`);
 	}
 	else
-		console.log("Third test is successful");
-}
-
-//-----------------------------------------------------------------------------------------------------
-
-// Не получилось подключить assert
-
-// import assert from 	;
-// import { randomCards } from "./random_card";
-
-// {
-//     // Подготовка
-//     const expected = 6;
-
-//     // Действие
-//     const is = randomCards(3).length;
-
-//     // Сравнение
-//     assert.strictEqual(expected, is, `Expected ${expected}, but got ${is}`);
-// }
+		console.log("First test is successful");
+})

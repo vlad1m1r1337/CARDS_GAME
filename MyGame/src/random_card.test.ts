@@ -2,6 +2,7 @@
 //const { it } = require("@jest/globals");
 import { it } from "@jest/globals";
 import { randomCards } from "./random_card";
+const assert = require("assert").strict;
 
 it('should outp 6', () => {
 	// Подготовка
@@ -10,11 +11,7 @@ it('should outp 6', () => {
 	// Действие
 	const is = randomCards(3).length;
 
-	if (expected !== is){
-		console.log(`Expected ${expected}, but got ${is}`);
-	}
-	else
-		console.log("First test is successful");
+	assert.equal(expected, is);
 })
 
 it('should outp 9', () => {
@@ -24,11 +21,7 @@ it('should outp 9', () => {
 	// Действие
 	const is = randomCards(6).length;
 
-	if (expected !== is){
-		console.log(`Expected ${expected}, but got ${is}`);
-	}
-	else
-		console.log("First test is successful");
+	assert.equal(expected, is);
 })
 
 it('should outp 9', () => {
@@ -38,9 +31,5 @@ it('should outp 9', () => {
 	// Действие
 	const is = randomCards(9).length;
 
-	if (expected !== is){
-		console.log(`Expected ${expected}, but got ${is}`);
-	}
-	else
-		console.log("First test is successful");
+	assert.equal(expected, is);
 })

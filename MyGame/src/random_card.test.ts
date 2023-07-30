@@ -1,5 +1,3 @@
-//-----------------------------------------------------------------------------------------------------
-//const { it } = require("@jest/globals");
 import { it } from "@jest/globals";
 import { randomCards } from "./random_card";
 const assert = require("assert").strict;
@@ -14,7 +12,7 @@ it('should outp 6', () => {
 	assert.equal(expected, is);
 })
 
-it('should outp 9', () => {
+it('should outp 12', () => {
 	// Подготовка
 	const expected = 12;
 
@@ -24,7 +22,7 @@ it('should outp 9', () => {
 	assert.equal(expected, is);
 })
 
-it('should outp 9', () => {
+it('should outp 18', () => {
 	// Подготовка
 	const expected = 18;
 

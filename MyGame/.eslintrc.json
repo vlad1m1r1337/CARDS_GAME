@@ -4,9 +4,15 @@
 		"es6": true,
 		"node": true
 	},
-    //"extends": ["eslint:recommended","prettier"],
+	//"plugins": ["@typescript-eslint"],
+	"parser": "@typescript-eslint/parser",
+    "extends": [
+		"eslint:recommended",
+		"prettier"
+	],
     //"plugins": ["prettier"],
 	"parserOptions": {
+		"project": "tsconfig.json",
 		"ecmaVersion": 2020,
 		"sourceType": "module"
 	},

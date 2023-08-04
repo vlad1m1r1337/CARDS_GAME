@@ -119,6 +119,17 @@ body {
     justify-content: center;
 }
 
+.time {
+    display: flex;
+    width: 155px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #fff;
+    justify-content: center;
+}
+
 .min-sek {
     width: 26px;
     height: 32px;

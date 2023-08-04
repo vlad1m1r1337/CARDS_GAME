@@ -11,7 +11,7 @@
         "lint:ts": "eslint ./src/*.ts",
         "lint:css": "stylelint ./src/index.css",
         "lint": "npm run lint:css && npm run lint:ts",
-        "prepare": "husky install",
+        "prepare": "cd .. && husky install",
         "test": "jest"
     },
     "dependencies": {
